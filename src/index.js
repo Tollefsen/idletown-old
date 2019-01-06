@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import ButtonWithScoreAndUpgrade from "./instantGratification/standard";
 import ProgressBar from "./delayedGratification/progressbar";
 import IdleToolWrapper from './common/wrapper'
+import Bank from './bank/bank'
 
 const App = () => {
     return (
@@ -12,6 +13,9 @@ const App = () => {
             </IdleToolWrapper>
             <IdleToolWrapper>
                 <ProgressBar />
+            </IdleToolWrapper>
+            <IdleToolWrapper>
+                <Bank />
             </IdleToolWrapper>
         </div>
     )

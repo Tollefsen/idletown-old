@@ -1,5 +1,4 @@
 export const increment =  ({ state }) => {
-    console.log('inc')
     state.instant.score += state.instant.incRate
 }
 
