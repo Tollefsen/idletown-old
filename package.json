@@ -1,0 +1,28 @@
+{
+  "name": "idletown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devtools": "npx overmind-devtools"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tollefsen/idletown.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tollefsen/idletown/issues"
+  },
+  "homepage": "https://github.com/Tollefsen/idletown#readme",
+  "dependencies": {
+    "overmind": "^8.0.0",
+    "overmind-react": "^8.0.0",
+    "parcel-bundler": "^1.11.0",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  }
+}
