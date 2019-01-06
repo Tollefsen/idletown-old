@@ -1,10 +1,8 @@
 import * as React from "react";
-import { useOvermind } from "../app";
+import { connect } from "../app";
 
-const ProgressBar = () => {
-    const { state, actions } = useOvermind()
-    let thisState = state.progressbar
-    let thisActions = actions.progressbar
+const ProgressBar = ({ overmind }) => {
+    const { state, actions } = overmind
 
     let divStyle = {
         width: 100,
@@ -14,7 +12,7 @@ const ProgressBar = () => {
         borderRadius: 6
     }
     let innerStyle = {
-        width: thisState.progbar,
+        width: state.delayed.progbar,
         height: 10,
         backgroundColor: 'black',
         overflow: 'hidden'
@@ -22,12 +20,12 @@ const ProgressBar = () => {
 
     return (
         <div>
-            <h2>{thisState.score}</h2>
+            <h2>{state.delayed.score}</h2>
             <div style={divStyle} >
                 <div style={innerStyle} ></div>
             </div>
-            <button onClick={thisActions.startTimer} >Progbar</button>
+            <button onClick={actions.delayed.startTimer} >Progbar</button>
         </div>
     )
 }
-export default ProgressBar
+export default connect(ProgressBar)

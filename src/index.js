@@ -10,6 +10,9 @@ const App = () => {
             <IdleToolWrapper>
                 <ButtonWithScoreAndUpgrade />
             </IdleToolWrapper>
+            <IdleToolWrapper>
+                <ProgressBar />
+            </IdleToolWrapper>
         </div>
     )
 }
