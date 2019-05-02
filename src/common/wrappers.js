@@ -22,7 +22,7 @@ export const IdleToolWrapper = (props) => {
     let style = {
         width: 200,
         height: 200,
-        border: '1px solid black',
+        border: '1px solid white',
         borderRadius: 6,
         opacity: (props.shown) ? 1 : 0,
         display: 'flex',
