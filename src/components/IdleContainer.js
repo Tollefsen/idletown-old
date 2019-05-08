@@ -74,7 +74,7 @@ class IdleContainer extends React.Component {
                 state.progbar = (state.progbar < 100) ? state.progbar + 1 : 0
                 return state
             })
-        }, 100)
+        }, 50)
     }
 
     upgradeAuto() {
